@@ -1,0 +1,15 @@
+<h2>Me adota aí</h2>
+
+<% if @adoptions.any? %>
+  <% @adoptions.each do |adoption| %>
+  <ul>
+    <li><%= adoption.title %></li>
+    <li><%= adoption.description %></li>
+    <li><%= adoption.animal_type  %></li>
+    <li><%= adoption.city %></li>
+    <li><%= link_to "Acessar adoção", adoption_path(adoption.id) %>
+  </ul>
+  <% end %>
+<% else %>
+  <p>Não há adoções disponíveis.</p>
+<% end %>

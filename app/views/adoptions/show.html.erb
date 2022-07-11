@@ -1,0 +1,25 @@
+<h2>Adoção de <%="#{@adoption['animal_name']}"%> </h2>
+
+<div>
+  <h3><%=@adoption['title']%></h3>
+  <p><%=@adoption['description']%></p>
+  <table>
+    <tr>
+      <th>Nome do animal</th>
+      <th>Idade</th>
+      <th>Tipo do animal</th>
+      <th>Sexo</th>
+      <th>Cuidador</th>
+      <th>Cidade</th>
+
+    </tr>
+    <tr>
+      <td><%=@adoption['animal_name']%></td>
+      <td><%=@adoption['age']%></td>
+      <td><%=@adoption['animal_type']%></td>
+      <td><%=@adoption['sex']%></td>
+      <td><%=@adoption['user_pet_care']%></td>
+      <td><%=@adoption['city']%></td>
+    </tr>
+  </table>
+</div>
