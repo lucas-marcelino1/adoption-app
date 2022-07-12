@@ -1,6 +1,8 @@
 <h2>Me adota aí</h2>
-
-<% if @adoptions.any? %>
+<div>
+  <%= link_to 'Todos os animais', animals_path %>
+</div>
+<% if !@adoptions.nil? && @adoptions.any? %>
   <% @adoptions.each do |adoption| %>
   <ul>
     <li><%= adoption.title %></li>

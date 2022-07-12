@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "adoptions#index"
   resources :adoptions, only: [:show]
+  resources :animals, only: [:index]
 end
