@@ -1,0 +1,25 @@
+[
+  {"name": "Melissa", 
+  "animal_type": "Gato", 
+  "city": "Blumenau",
+  "age": 2,
+  "sex": "Fêmea"},
+
+  {"name": "Tofu", 
+  "animal_type": "Papagaio", 
+  "city": "Concórdia",
+  "age": 0.8,
+  "sex": "Macho"},
+
+  {"name": "Ricardo", 
+  "animal_type": "Cachorro", 
+  "city": "Florianópolis",
+  "age": 1.8,
+  "sex": "Macho"},
+
+  {"name": "Tunico", 
+  "animal_type": "Gato", 
+  "city": "Blumenau",
+  "age": 1.0,
+  "sex": "Macho"}
+]

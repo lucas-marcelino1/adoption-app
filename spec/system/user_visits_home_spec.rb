@@ -22,4 +22,10 @@ describe 'User view adoptions' do
 
     expect(page).to have_content("Não há adoções disponíveis.")
   end
+
+  it 'and connection with adoption registering app fails' do
+    visit(root_path)
+
+    expect(page).to have_content('A conexão com o sistema de adoções não aconteceu!')
+  end
 end

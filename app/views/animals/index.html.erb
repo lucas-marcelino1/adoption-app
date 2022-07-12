@@ -1,0 +1,9 @@
+<h2>Todos os animais cadastrados</h2>
+
+<% if !@animals.nil? && @animals.any? %>
+  <% @animals.each do |animal| %>
+    <p><%= animal.name %> - <%= animal.animal_type %> | <%= animal.city %> |</p>
+  <% end %>
+<% else %>
+  <p> Não há animais cadastrados </p>
+<% end %>
