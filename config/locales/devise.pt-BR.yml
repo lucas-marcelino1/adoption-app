@@ -58,5 +58,5 @@ pt-BR:
       not_found: "não encontrado"
       not_locked: "não encontra-se bloqueada"
       not_saved:
-        one: "1 erro impediu a gravação de %{resource} :"
-        other: "%{count} erros impediram a gravação de %{resource} :"
+        one: "1 erro impediu o registro de %{resource} :"
+        other: "%{count} erros impediram o registro de %{resource} :"
