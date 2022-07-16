@@ -1,4 +1,5 @@
 class AdoptionsController < ApplicationController
+  before_action :authenticate_pet_care!, only: [:show]
 
   def index
     @adoptions = Adoption.all

@@ -28,4 +28,15 @@ describe 'User view adoptions' do
 
     expect(page).to have_content('A conexão com o sistema de adoções não aconteceu!')
   end
+
+  it 'and log in successfuly' do
+    PetCare.create!(name: 'Lucas', city: 'Blumenau', email: 'lucas@email.com', password: '123456789', cpf: '12345678999')
+
+    visit(root_path)
+    click_on('Log in')
+    fill_in('E-mail', with: 'lucas@email.com')
+    fill_in('Senha', with: '123456789')
+    click_on('Entrar')
+
+  end
 end

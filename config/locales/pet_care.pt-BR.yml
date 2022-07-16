@@ -1,0 +1,10 @@
+pt-BR:
+  activerecord:
+    models:
+      pet_care: 'Cuidador'
+    attributes:
+      pet_care:
+        name: "Nome"
+        city: "Cidade"
+        cpf: "CPF"
+        
