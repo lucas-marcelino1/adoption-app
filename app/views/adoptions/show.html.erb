@@ -1,8 +1,8 @@
-<h2>Adoção de <%="#{@adoption['animal_name']}"%> </h2>
+<h2>Adoção de <%="#{@adoption.animal_name}"%> </h2>
 
 <div>
-  <h3><%=@adoption['title']%></h3>
-  <p><%=@adoption['description']%></p>
+  <h3><%=@adoption.title%></h3>
+  <p><%=@adoption.description%></p>
   <table>
     <tr>
       <th>Nome do animal</th>
@@ -14,12 +14,13 @@
 
     </tr>
     <tr>
-      <td><%=@adoption['animal_name']%></td>
-      <td><%=@adoption['age']%></td>
-      <td><%=@adoption['animal_type']%></td>
-      <td><%=@adoption['sex']%></td>
-      <td><%=@adoption['user_pet_care']%></td>
-      <td><%=@adoption['city']%></td>
+      <td><%=@adoption.animal_name%></td>
+      <td><%=@adoption.age%></td>
+      <td><%=@adoption.animal_type%></td>
+      <td><%=@adoption.sex%></td>
+      <td><%=@adoption.user_pet_care%></td>
+      <td><%=@adoption.city%></td>
+      <%= button_to "Adotar #{@adoption.animal_name}", adopt_adoption_path(@adoption.id), method: :patch %>
     </tr>
   </table>
 </div>
