@@ -5,7 +5,13 @@ class AdoptionsController < ApplicationController
   end
 
   def show
-    response = Faraday.get("http://localhost:4000/api/v1/adoptions/#{params[:id]}")
-    @adoption = JSON.parse(response.body)
+    @adoption = Adoption.find(params[:id])
+  end
+
+  def adopt
+    @adoption = Adoption.find(params[:id])
+    PetCareAnimal.create!(pet_care: current_pet_care, animal_id: @adoption.animal_id)
+    response = Faraday.patch("http://localhost:4000/api/v1/adoptions/#{params[:id]}/adopt")
+    redirect_to root_path, notice: (JSON.parse(response.body))["message"]
   end
 end

@@ -4,6 +4,7 @@
     "title": "Adote a capivara",
     "description": "Encontrei esta capivara na minha lavação.",
     "city": "Blumenau",
-    "animal_type": "Capivara"
+    "animal_type": "Capivara",
+    "animal_id": 1
   }
 ]
